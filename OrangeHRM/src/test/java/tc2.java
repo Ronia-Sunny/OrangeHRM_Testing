@@ -14,7 +14,7 @@ public class tc2 extends orangrHRMReporter
     public void leave() 
     {
         try {
-            logger.log(LogStatus.INFO, "Starting PIM Records");
+            logger.log(LogStatus.INFO, "Starting Recruitment Records");
             
            
             performLogin();
@@ -23,22 +23,22 @@ public class tc2 extends orangrHRMReporter
             
             
             WebElement pimMenu = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='PIM']"))
+                ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Recruitment']"))
             );
             pimMenu.click();
-            logger.log(LogStatus.INFO, "Clicked on PIM menu");
+            logger.log(LogStatus.INFO, "Clicked on Recruitment menu");
             
             Thread.sleep(2000); 
             
            
             WebElement addEmployeeLink = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Add Employee']"))
+                ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Vacancies']"))
             );
             addEmployeeLink.click();
-            logger.log(LogStatus.INFO, "Clicked on Add Employee");
+            logger.log(LogStatus.INFO, "Clicked on Vacancies");
             
             
-            wait.until(ExpectedConditions.urlContains("/addEmployee"));
+            wait.until(ExpectedConditions.urlContains("/viewJobVacancy"));
             
            
             WebElement firstNameField = driver.findElement(By.name("firstName"));

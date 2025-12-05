@@ -14,7 +14,7 @@ public class tc6 extends orangrHRMReporter
     public void leave() 
     {
         try {
-            logger.log(LogStatus.INFO, "Starting PIM Records");
+            logger.log(LogStatus.INFO, "Starting Leave Records");
             
            
             performLogin();
@@ -23,40 +23,40 @@ public class tc6 extends orangrHRMReporter
             
             
             WebElement pimMenu = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='PIM']"))
+                ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Leave']"))
             );
             pimMenu.click();
-            logger.log(LogStatus.INFO, "Clicked on PIM menu");
+            logger.log(LogStatus.INFO, "Clicked on Leave menu");
             
             Thread.sleep(2000); 
             
            
             WebElement addEmployeeLink = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Add Employee']"))
+                ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Apply']"))
             );
             addEmployeeLink.click();
-            logger.log(LogStatus.INFO, "Clicked on Add Employee");
+            logger.log(LogStatus.INFO, "Clicked on Apply leave");
             
             
-            wait.until(ExpectedConditions.urlContains("/addEmployee"));
+            wait.until(ExpectedConditions.urlContains("/applyLeave"));
             
            
-            WebElement firstNameField = driver.findElement(By.name("firstName"));
-            firstNameField.sendKeys("John");
-            
-            WebElement middleNameField = driver.findElement(By.name("middleName"));
-            middleNameField.sendKeys("M");
-            
-            WebElement lastNameField = driver.findElement(By.name("lastName"));
-            lastNameField.sendKeys("Doe");
-            
-            logger.log(LogStatus.INFO, "Entered employee details: John M Doe");
-            
-            
-            WebElement saveButton = driver.findElement(By.xpath("//button[@type='submit']"));
-            saveButton.click();
-            logger.log(LogStatus.INFO, "Clicked Save button");
-            
+//            WebElement firstNameField = driver.findElement(By.name("firstName"));
+//            firstNameField.sendKeys("John");
+//            
+//            WebElement middleNameField = driver.findElement(By.name("middleName"));
+//            middleNameField.sendKeys("M");
+//            
+//            WebElement lastNameField = driver.findElement(By.name("lastName"));
+//            lastNameField.sendKeys("Doe");
+//            
+//            logger.log(LogStatus.INFO, "Entered employee details: John M Doe");
+//            
+//            
+//            WebElement saveButton = driver.findElement(By.xpath("//button[@type='submit']"));
+//            saveButton.click();
+//            logger.log(LogStatus.INFO, "Clicked Save button");
+//            
             
             Thread.sleep(3000);
             
