@@ -36,7 +36,7 @@ public class orangrHRMReporter
     {
         driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/");
         

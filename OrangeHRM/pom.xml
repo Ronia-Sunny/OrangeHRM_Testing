@@ -29,7 +29,22 @@
         <version>2.41.2</version>
     </dependency>
     
-    <!-- Apache Commons IO -->
+    
+    <!--Cucumber -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>6.1.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>6.1.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Apache Commons IO
+     -->
     <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>

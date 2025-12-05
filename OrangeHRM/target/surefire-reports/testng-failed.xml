@@ -14,6 +14,19 @@
       </class> <!-- tc1 -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)" verbose="0">
+    <classes>
+      <class name="tc2">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="leave"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tc2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
   <test thread-count="5" name="Test3(failed)" verbose="0">
     <classes>
       <class name="tc3">
@@ -27,6 +40,19 @@
       </class> <!-- tc3 -->
     </classes>
   </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)" verbose="0">
+    <classes>
+      <class name="tc4">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="updateEmployeeTest"/>
+        </methods>
+      </class> <!-- tc4 -->
+    </classes>
+  </test> <!-- Test4(failed) -->
   <test thread-count="5" name="Test5(failed)" verbose="0">
     <classes>
       <class name="tc5">

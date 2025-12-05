@@ -30,5 +30,11 @@
       <class name="tc5"/>
     </classes>
   </test> <!-- Test -->
+    <!-- Test -->
+  <test name="Test6">
+    <classes>
+      <class name="tc6"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
 
