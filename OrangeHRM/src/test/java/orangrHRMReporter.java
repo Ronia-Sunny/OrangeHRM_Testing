@@ -25,7 +25,7 @@ public class orangrHRMReporter
     @BeforeSuite
     public void beforeSuite() 
     {
-        extent = new ExtentReports("C:\\Selenium Demo\\MavenextentreportsEx2\\TestReports\\Reports.html", true);
+        extent = new ExtentReports("C:\\Selenium Demo\\OrangeHRM\\TestReports\\Reports.html", true);
         extent.addSystemInfo("Environment", "QA");
         extent.addSystemInfo("Browser", "Microsoft Edge");
         extent.addSystemInfo("User", System.getProperty("user.name"));
